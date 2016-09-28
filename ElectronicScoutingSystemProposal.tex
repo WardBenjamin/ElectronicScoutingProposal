@@ -1,15 +1,29 @@
 \documentclass{report}
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage{graphicx}
-\usepackage[letterpaper]{geometry}
-\usepackage{indentfirst}
+
+%=====================================
+%				Packages
+%=====================================
+
+\usepackage{titling} 				% Used for pre/post title options
+%\usepackage{titlesec}				% Used for title formatting
+\usepackage{graphicx} 				% Provides image support
+\usepackage[letterpaper]{geometry} 		% Defines margins and other options as standard letter paper instead of A4.
+\usepackage{indentfirst} 				% Indents the first paragraph in each section
+
+%=====================================
+%				Configuration
+%=====================================
+
 
 %\titleformat*{\section}{\LARGE\bfseries}
 %\titleformat*{\subsection}{\Large\bfseries}
 %\titleformat*{\subsubsection}{\large\bfseries}
 %\titleformat*{\paragraph}{\large\bfseries}
 %\titleformat*{\subparagraph}{\large\bfseries}
+
+%=====================================
+%				Title settings
+%=====================================
 
 \pretitle{%
   \begin{center}
@@ -24,6 +38,10 @@
 
 \date{2016-09-27}
 \author{Benjamin Ward}
+
+%=====================================
+%				Content
+%=====================================
 
 \begin{document}
 
@@ -59,9 +77,33 @@ From past experience, as Chantilly Robotics has used a paper and pencil system s
 
 \section{Proposed System Overview}
 
+\subsection{Why Mobile?}
+
+Most functionality in the proposed system is in the form of applications, or \lq\lq{apps}\rq\rq{}, running on mobile devices (i.e., phones and tablets). This is done for three reasons:
+
+\begin{enumerate}
+\item Portability
+\item Power Requirements
+\item Costs
+\end{enumerate}
+
+\subsubsection*{Portability}
+
+The ability to effectively transport and run the system at a variety of competitions, all with different seating, environments, etc.
+
+\subsubsection*{Power}
+
+Much lower power requirements; some mobile devices will last for 12+ hours per day. This allows for less dependance on power availability, and opens further power options that will be explored in
+
+\subsubsection*{Costs}
+
+Not only can the costs be offset by personal devices, but in general mobile devices are much more cost-effective and affordable than laptops or other options.
+
 \subsection{Equipment Requirements}
 
-While some electronic scouting systems do successfully utilize personal devices, this creates unneccessary restrictions on who is eligable for both match and pit scouting. Ideally, at least six match scouting devices and two pit scouting devices should be utilized at all times, which means that extra devices will be required to use as backups. Since the requirements for match scouting are slightly different than those of pit scouting in terms of device requirements, the two pools of devices cannot be shared without undue expense. The requirements for scouting devices are as follows: 
+While electronic scouting systems do successfully utilize personal devices, this creates unneccessary restrictions on who is eligible for both match and pit scouting. Additionally, some of these devices may not be compatible with hardware requirements. For these reasons, personal devices should not be completely relied upon. \newline
+
+Ideally, at least six match scouting devices and two pit scouting devices should be utilized at all times, which means that extra devices will be required to use as backups. Since the requirements for match scouting are slightly different than those of pit scouting in terms of device requirements, the two pools of devices cannot be shared without undue expense. The requirements for scouting devices are as follows: 
 
 \begin{center}
  \begin{tabular}{||c|c|c||} 
