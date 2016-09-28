@@ -1,15 +1,31 @@
+% arara: pdflatex
+% arara: biber
+% arara: pdflatex
+
 \documentclass[11pt]{report}
 
 %=====================================
 %				Packages
 %=====================================
 
+% Titling
+
 \usepackage{titling} 				% Used for pre/post title options
 %\usepackage{titlesec}				% Used for title formatting
-\usepackage{graphicx} 				% Provides image support
+
+% Formatting
+
 \usepackage[letterpaper]{geometry} 		% Defines margins and other options as standard letter paper instead of A4.
 \usepackage{indentfirst} 				% Indents the first paragraph in each section
-\usepackage[hidelinks]{hyperref}
+\usepackage{biblatex}				% Improved bibliography system
+
+% Content
+
+\usepackage{graphicx} 				% Provides image support
+
+% Misc
+
+\usepackage[hidelinks]{hyperref}		% Used to link ToC entries to their relevant sections		% Note: This overrides a LOT of macros. It should be last if possible.
 
 %=====================================
 %				Configuration
@@ -21,6 +37,12 @@
 %\titleformat*{\subsubsection}{\large\bfseries}
 %\titleformat*{\paragraph}{\large\bfseries}
 %\titleformat*{\subparagraph}{\large\bfseries}
+
+%=====================================
+%				Bibliography
+%=====================================
+
+\addbibresource{amazon.bib}
 
 %=====================================
 %				Title settings
@@ -121,6 +143,12 @@ Ideally, at least six match scouting devices and two pit scouting devices should
  \hline
 \end{tabular}
 \end{center}
+
+\subsection{Proposed Equipment}
+
+In an attempt to create the lowest possible cost without sacrificing major features, the best low-cost tablet suitable for match scouting is the Amazon Fire HD 8. While more expensive than the\lq\lq{default}\rq\rq{} Fire tablet, the Fire HD 8 has several large advantages. A comparison of the specifications follows, from the Amazon Device and Feature Specifications \cite{amazondevicespec}:
+
+\printbibliography[heading=bibintoc]
 
 \end{document}
 

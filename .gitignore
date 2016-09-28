@@ -3,3 +3,8 @@
 *.pdf
 *.synctex.gz
 *.toc
+*.bbl
+*.bcf
+*.blg
+*.out
+*.run.xml
