@@ -1,0 +1,82 @@
+\documentclass{report}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage[letterpaper]{geometry}
+\usepackage{indentfirst}
+
+%\titleformat*{\section}{\LARGE\bfseries}
+%\titleformat*{\subsection}{\Large\bfseries}
+%\titleformat*{\subsubsection}{\large\bfseries}
+%\titleformat*{\paragraph}{\large\bfseries}
+%\titleformat*{\subparagraph}{\large\bfseries}
+
+\pretitle{%
+  \begin{center}
+  \LARGE
+  \includegraphics[width=\textwidth]{chsrobologo}
+  \newline\newline\newline\newline\newline
+}
+
+\title{ \protect\parbox{\textwidth}{\protect\centering Chantilly Robotics\\ Electronic Scouting System 2016}}
+
+\posttitle{\end{center}}
+
+\date{2016-09-27}
+\author{Benjamin Ward}
+
+\begin{document}
+
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Introduction}
+
+\section{Background}
+
+\subsection{Goal}
+
+\textbf{The goal of Chantilly Robotics' scouting system is to allow for seamless data input, processing, and visualization that can be used for both match strategy and alliance selection.}
+
+\subsection{History}
+
+Over the last several years, Chantilly Robotics has utilized SPAM (FRC 180)'s Poor Man's Scouting System, a paper and pencil system where information is recorded on spreadsheets. Our team also adds the extra step of transcribing this data onto a computerized spreadsheet for searching purposes.
+
+\subsection{Why a Scouting System?}
+
+Scouting systems, whether "paper and pencil" or electronic, can provide varying levels of useful information to the team. This information can be used for match strategy, as well as being useful in alliance selection, since strategies can be formed based on your alliance's strength's and the opposing alliance's weaknesses. These strategies are necessary because alliance partners can determine not only the outcome of each match but also the outcome of the entire competition, meaning that the more information a team has to utilize the better the chance they can form optimal strategic decisions. Without a scouting system, it is difficult for even a team with a well-performing robot to reach a high competitive level due to sheer lack of quantitative information.
+
+\subsection{Electronic vs. Paper}
+
+From past experience, as Chantilly Robotics has used a paper and pencil system since 2013, paper scouting has both advantages and disadvantages over electronic scouting. When using a paper scouting system, data collection tends to be very efficient but any processing is highly impractical, requiring at least one extra dedicated scout at best to do even rudimentary spreadsheet processing. Far more data processing is possible if scouting is consolidated into a single semi-automated system, including data collection, processing, and visualization, as in most electronic scouting systems.
+
+\section{Proposed System Overview}
+
+\subsection{Equipment Requirements}
+
+While some electronic scouting systems do successfully utilize personal devices, this creates unneccessary restrictions on who is eligable for both match and pit scouting. Ideally, at least six match scouting devices and two pit scouting devices should be utilized at all times, which means that extra devices will be required to use as backups. Since the requirements for match scouting are slightly different than those of pit scouting in terms of device requirements, the two pools of devices cannot be shared without undue expense. The requirements for scouting devices are as follows: 
+
+\begin{center}
+ \begin{tabular}{||c|c|c||} 
+ \hline
+ Requirement & Match Scouting & Pit Scouting \\  [0.5ex] 
+ \hline \hline
+ Screen Size & $>$ 7in & $>$ 5in \\ 
+ \hline
+ Rear Camera Resolution & N/A & $>$ 3 MP \\ 
+ \hline
+ Android Version & \multicolumn{2}{|c||}{$\geq$ 4.4}  \\
+ \hline
+ Bluetooth Version & \multicolumn{2}{|c||}{$\geq$ 4.0} \\  [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+
+\end{document}
