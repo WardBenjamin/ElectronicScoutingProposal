@@ -116,7 +116,7 @@ The ability to effectively transport and run the system at a variety of competit
 
 \subsubsection*{Power}
 
-Much lower power requirements; some mobile devices will last for 12+ hours per day. This allows for less dependance on power availability, and opens further power options that will be explored in
+Much lower power requirements; some mobile devices will last for 12+ hours per day. This allows for less dependance on power availability, and opens further power options that will be explored in \
 
 \subsubsection*{Costs}
 
@@ -124,16 +124,16 @@ Not only can the costs be offset by personal devices, but in general mobile devi
 
 \subsection{Equipment Requirements}
 
-While electronic scouting systems do successfully utilize personal devices, this creates unneccessary restrictions on who is eligible for both match and pit scouting. Additionally, some of these devices may not be compatible with hardware requirements. For these reasons, personal devices should not be completely relied upon. \newline
+While electronic scouting systems do successfully utilize personal devices, this creates unneccessary restrictions on who is eligible for both match and pit scouting. Additionally, some of these devices may not be compatible with hardware requirements. For these reasons, personal devices should not be completely relied upon, especially for match scouting. Personal device use will be explored in SECTION REPLACMEWITHLINK. \newline
 
-Ideally, at least six match scouting devices and two pit scouting devices should be utilized at all times, which means that extra devices will be required to use as backups. Since the requirements for match scouting are slightly different than those of pit scouting in terms of device requirements, the two pools of devices are difficult to share without undue expense. The requirements for scouting devices are as follows: 
+Ideally, at least six match scouting devices and one pit scouting device should be utilized at all times, which means that extra devices will be required to use as backups. Since the requirements for match scouting are slightly different than those of pit scouting in terms of device requirements, the two pools of devices are difficult to share without undue expense. The requirements for scouting devices are as follows: 
 
 \begin{center}
  \begin{tabular}{||c|c|c||} 
  \hline
  Requirement & Match Scouting & Pit Scouting \\  [0.5ex] 
  \hline \hline
- Screen Size & $>$ 7in & $>$ 5in \\ 
+ Screen Size & $>$ 7in & N/A \\ 
  \hline
  Rear Camera Resolution & N/A & $>$ 3 MP \\ 
  \hline
@@ -146,7 +146,88 @@ Ideally, at least six match scouting devices and two pit scouting devices should
 
 \subsection{Proposed Equipment}
 
+\subsubsection{Match Scouting}
+
 In an attempt to create the lowest possible cost without sacrificing major features, the best low-cost tablet suitable for match scouting is the Amazon Fire HD 8. While more expensive than the\lq\lq{default}\rq\rq{} Fire tablet, the Fire HD 8 has several large advantages. A comparison of the specifications follows, from the Amazon Device and Feature Specifications \cite{amazondevicespec}:
+
+\begin{center}
+%\begin{tabular}
+
+% Insert Fire vs Fire HD 8 spec table here!
+
+%\end{tabular}
+\end{center}
+
+\subsubsection{Pit Scouting}
+
+Pit scouting differs from match scouting in that the required devices have much fewer requirements; since pit scouting does not require a large amount of user interface to be visible at all times, almost any screen size is usable. This enables a far wider range of devices to be used, and as an effect of this most personal Android devices should be able to be used, as long as they have a good rear camera, which most do. For this reason, there is no specific recommended device to use in leiu of a team-member-owned device. \newline
+
+The use of a camera to record visual data does invalidate the use of the Fire/Fire HD 8 for pit scouting, since neither has a sufficient camera. However, this is not forseen as a problem due to the availability of team-member devices.
+ 
+\subsection{Android vs. iOS}
+
+For scouting purposes, restricting an electronic system to Android has both advantages and disadvantages. Since iOS inherantly is more expensive and more difficult to test, due to the requirement of an available Mac (including a Macbook Air, Macbook Pro, Mac Mini, or any other current-generation full Apple PC) for iOS app development as well as a much more expensive development license (100 dollars per year vs. 25 dollars one-time) in addition to physical iOS devices for testing, Android is much preferred for the majority of the system. Additionally, Android devices are often over an order of magnitude less expensive, which dramatically decreases costs for team-owned devices. \newline
+
+Use of iOS devices in regards to data visualization will be explored further in SECTION REPLACEMEWITHLINK.
+
+\subsection{Infrastructure}
+
+For the same reasons that phones were chosen to form the majority of the scouting system, the server portion of the system will be fulfilled with a Raspberry Pi 3.
+
+\subsection{Super Scout}
+
+Depending on game-specific requirements, a "super-scout" could be required to collect and input data that lies outside the scope of individual robot scouting. For example, in the 2016 game FIRST Stronghold, a Super Scout would input defense selections, which would then be transmitted to the server and then outwards back ot the match scouting devices. This device could double as a visualization device, but should not be a match scouting device because it would require usage at the same time as said devices.
+
+A Super Scout could also be used to collect subjective data and notes about robots, to add subjective in-match observations to pit scouting data. Again using the example of FIRST Stronghold, this could include notes of the percieved experience of drivers or of alliance match strategy.
+
+\subsection{Notes}
+
+These proposed materials do not include the phones used for processing and viewing data. Due to the widespread nature of mobile devices, it is highly likely that multiple team members would be willing to allow their phones to be used as part of the scouting system while at competition.
+
+
+
+
+%=====================================
+%				Outline
+%=====================================
+
+\chapter{Technical Details}
+
+\section{Data Collection}
+\subsection{Match Scouting}
+\subsection{Pit Scouting}
+\subsection{Prior Data}
+\subsubsection{Archival}
+\subsubsection{Usage of Archived Data}
+
+\section{Processing}
+\subsection {Server}
+\subsection{Hardware}
+\subsection{Bluetooth Limitations}
+\subsection{Proposed Solutions}
+
+\section{Visualization}
+
+\section{Unsolved Problems}
+
+\chapter{Logistics}
+
+\section{Development Process}
+\subsection{Schedule}
+
+\section{Offseason}
+\section{Kickoff}
+\section{Early Build Season}
+\section{Late Build Season}
+\section{Competition Season}
+\section{Championships}
+
+\chapter{Conclusion}
+
+\section{Review}
+\subsection{Overall}
+\subsection{Infrastructure}
+
 
 \printbibliography[heading=bibintoc]
 
