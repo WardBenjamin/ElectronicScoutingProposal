@@ -78,6 +78,8 @@
 
 \newpage
 
+%=============================================================
+
 \chapter{Introduction}
 
 \section{Background}
@@ -97,6 +99,8 @@ Scouting systems, whether "paper and pencil" or electronic, can provide varying 
 \subsection{Electronic vs. Paper}
 
 From past experience, as Chantilly Robotics has used a paper and pencil system since 2013, paper scouting has both advantages and disadvantages over electronic scouting. When using a paper scouting system, data collection tends to be very efficient but any processing is highly impractical, requiring at least one extra dedicated scout at best to do even rudimentary spreadsheet processing. Far more data processing is possible if scouting is consolidated into a single semi-automated system, including data collection, processing, and visualization, as in most electronic scouting systems.
+
+%=============================================================
 
 \section{Proposed System Overview}
 
@@ -122,6 +126,8 @@ Much lower power requirements; some mobile devices will last for 12+ hours per d
 
 Not only can the costs be offset by personal devices, but in general mobile devices are much more cost-effective and affordable than laptops or other options.
 
+%=============================================================
+
 \subsection{Equipment Requirements}
 
 While electronic scouting systems do successfully utilize personal devices, this creates unneccessary restrictions on who is eligible for both match and pit scouting. Additionally, some of these devices may not be compatible with hardware requirements. For these reasons, personal devices should not be completely relied upon, especially for match scouting. Personal device use will be explored in \autoref{sec:propequip}. \newline
@@ -144,6 +150,8 @@ Ideally, at least six match scouting devices and one pit scouting device should 
 \end{tabular}
 \end{center}
 
+%=============================================================
+
 \subsection{Proposed Equipment}
 \label{sec:propequip}
 
@@ -164,6 +172,8 @@ In an attempt to create the lowest possible cost without sacrificing major featu
 Pit scouting differs from match scouting in that the required devices have much fewer requirements; since pit scouting does not require a large amount of user interface to be visible at all times, almost any screen size is usable. This enables a far wider range of devices to be used, and as an effect of this most personal Android devices should be able to be used, as long as they have a good rear camera, which most do. For this reason, there is no specific recommended device to use in leiu of a team-member-owned device. \newline
 
 The use of a camera to record visual data does invalidate the use of the Fire/Fire HD 8 for pit scouting, since neither has a sufficient camera. However, this is not forseen as a problem due to the availability of team-member devices.
+
+%=============================================================
  
 \subsection{Android vs. iOS}
 
@@ -185,21 +195,27 @@ A Super Scout could also be used to collect subjective data and notes about robo
 
 These proposed materials do not include the phones used for processing and viewing data. Due to the widespread nature of mobile devices, it is highly likely that multiple team members would be willing to allow their phones to be used as part of the scouting system while at competition.
 
-
-
-
-%=====================================
-%				Outline
-%=====================================
+%=============================================================
+%=============================================================
 
 \chapter{Technical Details}
 
 \section{Data Collection}
 \subsection{Match Scouting}
+
+\subsubsection{Usage Procedure}
+
+The match scouting app is designed to be as simple and consistant as possible. To this end, usage is meant to be extremely easy. Upon startup, the app will attempt to connect to the Bluetooth PAN broadcast by the server device. If this is not successful, the app will notify the user. After connection, the user will request a match schedule from the server, which populates the match scouting device with assigned robots for each match. Assignments are based on robot field position, so a scout who scouts Red 1 one match will scout Red 1 for the entire competition, or at least for that day. Assigned robot information is persistent, and only needs to be done once per competition. See \autoref{sec:msdeviceswap} for more information.
+
+After robot assignments have been populated, the scout has the option to ready a match, which moves them to the pre-match screen, and requests the initials of the scout for tracking purposes. The user is required to reenter their initials when readying a new match so that this information is always correct despite scouts switching out. After entry, the app will move to the autonomous screen.
+
+
 \subsection{Pit Scouting}
 \subsection{Prior Data}
 \subsubsection{Archival}
 \subsubsection{Usage of Archived Data}
+
+%=============================================================
 
 \section{Processing}
 \subsection {Server}
@@ -207,15 +223,29 @@ These proposed materials do not include the phones used for processing and viewi
 \subsection{Bluetooth Limitations}
 \subsection{Proposed Solutions}
 
+%=============================================================
+
 \section{Visualization}
 \label{sec:visualization}
 
+%=============================================================
+
+\section{Solved Problems}
+\subsection{Match scouting device swap}
+\label{sec:msdeviceswap}
+
+If a match scouting device must be swapped, the old device must exit the app completely and disconnect from the server's Bluetooth PAN to make available that connection slot to the new device. Then, instead of populating the device with assigned robots as normal, the user on the new device will long-tap the button that normally assigns robots to scout each match, which will open an advanced setting menu. In this menu, the user can override the robots that will be scouted, and populate the scouting list with a specific field position, such as Red 1 or Blue 3.
+
 \section{Unsolved Problems}
+
+%=============================================================%=============================================================
 
 \chapter{Logistics}
 
 \section{Development Process}
 \subsection{Schedule}
+
+%=============================================================
 
 \section{Offseason}
 \section{Kickoff}
@@ -224,12 +254,15 @@ These proposed materials do not include the phones used for processing and viewi
 \section{Competition Season}
 \section{Championships}
 
+%=============================================================%=============================================================
+
 \chapter{Conclusion}
 
 \section{Review}
 \subsection{Overall}
 \subsection{Infrastructure}
 
+%=============================================================%=============================================================
 
 \printbibliography[heading=bibintoc]
 
